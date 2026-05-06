@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Get all letters",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Create letter",
+      "method": "POST",
+      "path": "/",
+      "body": "{\"id\":\"test001\",\"tracking_number\":\"AB000000001CD\",\"user_login\":\"Novikov\",\"sender_name\":\"Тест\",\"sender_address\":\"ул. Тестовая 1\",\"sender_city\":\"Москва\",\"sender_zip\":\"101000\",\"recipient_name\":\"Получатель\",\"recipient_address\":\"ул. Другая 2\",\"recipient_city\":\"СПб\",\"recipient_zip\":\"190000\",\"letter_type\":\"Заказное\",\"weight\":\"до 20г\",\"status\":\"Принято в отделении\"}",
+      "expectedStatus": 200
+    }
+  ]
+}

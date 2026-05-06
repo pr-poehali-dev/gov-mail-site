@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "name": "Login success",
+      "method": "POST",
+      "path": "/",
+      "body": "{\"login\": \"Novikov\", \"password\": \"novikov123\"}",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Login wrong password",
+      "method": "POST",
+      "path": "/",
+      "body": "{\"login\": \"Novikov\", \"password\": \"wrong\"}",
+      "expectedStatus": 401
+    }
+  ]
+}
